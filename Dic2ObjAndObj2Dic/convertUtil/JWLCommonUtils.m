@@ -22,7 +22,7 @@
         if (![self needToHandle:pType]) {
             [resultDic setValue:value forKey:pName];
         }else{
-            if ([pType containsString:@"NSArray"]) {
+            if ([pType rangeOfString:@"NSArray"].location != NSNotFound) {
                 NSMutableArray *array = [NSMutableArray array];
                 for(id o in value){
                     NSDictionary *d = [self objectToDictionary:o];
@@ -48,7 +48,7 @@
         if (value!=nil) {
             if ([value isKindOfClass:[NSDictionary class]]) {
                 NSString *pType = [NSString stringWithUTF8String:ivar_getTypeEncoding(vars[i])];
-                if (![pType containsString:@"NSArray"]) {
+                if ([pType rangeOfString:@"NSArray"].location == NSNotFound) {
                     Class subClass = [self dictionaryClassFromTypeEncoding:pType];
                     if (subClass == nil) {
                         NSLog(@"不存在名称为%@的类。",pType);
