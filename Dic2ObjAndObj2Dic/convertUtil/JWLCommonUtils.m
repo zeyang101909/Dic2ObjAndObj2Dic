@@ -136,11 +136,11 @@
 +(BOOL)needToHandle:(NSString *)pType{
     if (![pType hasPrefix:@"@"]) {
         return NO;
-    }else if ([pType containsString:@"NSString"]) {
+    }else if ([pType rangeOfString:@"NSString"].location != NSNotFound) {
         return NO;
-    }else if ([pType containsString:@"NSDictionary"]){
+    }else if ([pType rangeOfString:@"NSDictionary"].location != NSNotFound){
         return NO;
-    }else if([pType containsString:@"NSArray"] && ![pType containsString:@"<"]){
+    }else if([pType rangeOfString:@"NSArray"].location != NSNotFound && [pType rangeOfString:@"<"].location == NSNotFound){
         return NO;
     }
     return YES;
