@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D56C39D91AEFBD890021C8E7 /* NSObject+JWLObjDicConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = D56C39D81AEFBD890021C8E7 /* NSObject+JWLObjDicConvert.m */; };
 		D5A8C66C1AEA476B00ED9114 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A8C66B1AEA476B00ED9114 /* main.m */; };
 		D5A8C6731AEA479900ED9114 /* CourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A8C66E1AEA479900ED9114 /* CourseModel.m */; };
 		D5A8C6741AEA479900ED9114 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A8C6701AEA479900ED9114 /* StudentModel.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D56C39D71AEFBD890021C8E7 /* NSObject+JWLObjDicConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JWLObjDicConvert.h"; sourceTree = "<group>"; };
+		D56C39D81AEFBD890021C8E7 /* NSObject+JWLObjDicConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JWLObjDicConvert.m"; sourceTree = "<group>"; };
 		D5A8C65E1AEA46B400ED9114 /* Dic2ObjAndObj2Dic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Dic2ObjAndObj2Dic; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A8C66B1AEA476B00ED9114 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5A8C66D1AEA479900ED9114 /* CourseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseModel.h; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 		D5A8C6681AEA472D00ED9114 /* convertUtil */ = {
 			isa = PBXGroup;
 			children = (
+				D56C39D71AEFBD890021C8E7 /* NSObject+JWLObjDicConvert.h */,
+				D56C39D81AEFBD890021C8E7 /* NSObject+JWLObjDicConvert.m */,
 				D5A8C6761AEA47B000ED9114 /* JWLCommonUtils.h */,
 				D5A8C6771AEA47B000ED9114 /* JWLCommonUtils.m */,
 			);
@@ -164,6 +169,7 @@
 			files = (
 				D5A8C6731AEA479900ED9114 /* CourseModel.m in Sources */,
 				D5A8C6741AEA479900ED9114 /* StudentModel.m in Sources */,
+				D56C39D91AEFBD890021C8E7 /* NSObject+JWLObjDicConvert.m in Sources */,
 				D5A8C6751AEA479900ED9114 /* TeacherModel.m in Sources */,
 				D5A8C66C1AEA476B00ED9114 /* main.m in Sources */,
 				D5A8C6781AEA47B000ED9114 /* JWLCommonUtils.m in Sources */,
@@ -280,6 +286,7 @@
 				D5A8C6671AEA46B400ED9114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
